@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/verification/{{activityId}}/approve"
+method: POST
+headers:
+  Authorization: Bearer {{verifierToken}}
+order: 2000

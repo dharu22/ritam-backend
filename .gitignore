@@ -1,0 +1,18 @@
+
+# Dependencies
+node_modules/
+
+# Environment secrets
+.env
+.env.example
+
+# Uploaded files
+uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{baseUrl}}/api/reports/summary?academic_year=2026-27&department=CSE"
+method: GET
+headers:
+  Authorization: Bearer {{coordinatorToken}}
+queryParams:
+  academic_year: 2026-27
+  department: CSE
+order: 2000

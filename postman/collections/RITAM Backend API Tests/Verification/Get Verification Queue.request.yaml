@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{baseUrl}}/api/verification/queue"
+method: GET
+headers:
+  Authorization: Bearer {{verifierToken}}
+order: 1000

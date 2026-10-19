@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/verification/{{activityId}}/reject"
+method: POST
+headers:
+  Authorization: Bearer {{verifierToken}}
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "reason": "Supporting document is unclear"
+    }
+order: 3000

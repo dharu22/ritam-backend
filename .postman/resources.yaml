@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: 1c11f416-dc86-455c-8e2c-703ed07cda2a
+
+cloudResources:
+  collections:
+    ../postman/collections/RITAM Backend API Tests: 5c90a0e2-f67e-43c0-834c-94c8ed8352d6
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

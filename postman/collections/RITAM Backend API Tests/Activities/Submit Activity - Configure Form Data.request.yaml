@@ -1,0 +1,28 @@
+$kind: http-request
+url: "{{baseUrl}}/api/activities"
+method: POST
+headers:
+  Authorization: Bearer {{facultyToken}}
+body:
+  type: formdata
+  content:
+    - type: text
+      key: event_name
+      value: Sample Workshop
+    - type: text
+      key: event_type
+      value: WORKSHOP
+    - type: text
+      key: start_date
+      value: 2026-08-15
+    - type: text
+      key: end_date
+      value: 2026-08-16
+    - type: text
+      key: attended_as
+      value: Participant
+    - type: file
+      key: document
+      src:
+        - ""
+order: 2000

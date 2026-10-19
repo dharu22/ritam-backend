@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/login"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "email": "verifier.a@example.test",
+      "password": "VerifierA-Local-2026!"
+    }
+order: 2000

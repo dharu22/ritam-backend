@@ -1,0 +1,8 @@
+$kind: collection
+description: API collection for testing the RITAM multi-tenant backend. Set the baseUrl and tokens before running protected requests.
+variables:
+  baseUrl: http://localhost:5000
+  facultyToken: ""
+  verifierToken: ""
+  coordinatorToken: ""
+  activityId: "15"
