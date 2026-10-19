@@ -6,7 +6,7 @@ const { authenticateToken } = require('../middleware/auth');
 
 // Roles permitted to verify activities.
 // Confirm these role names against your assignment and seed data.
-const VERIFIER_ROLES = ['IQAC_VERIFIER', 'COORDINATOR'];
+const VERIFIER_ROLES = ['IQAC_VERIFIER'];
 
 function requireVerifier(req, res, next) {
   const { roles, active_role } = req.user;
@@ -17,7 +17,7 @@ function requireVerifier(req, res, next) {
     !VERIFIER_ROLES.includes(active_role)
   ) {
     return res.status(403).json({
-      message: 'Verifier or coordinator role required'
+      message: 'IQAC verifier role required'
     });
   }
 
